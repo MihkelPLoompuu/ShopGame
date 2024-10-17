@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ShopGame.Models.Shops.ShopsIndexViewModel>
+
+@{
+    int rowNumber = 1;
+}
+<div><a asp-action="Edit" asp-controller="Shop" type="submit" class="btn btn-primary">Start Shop</a></div>
+@*User can start shop using ADD function, to obtain new titan. In controller, this is called "PlayerSoloMission"*@
+
+<div class="h1">Your Shop:</div>
+<form method="post">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Level</th>
+                <th scope="col">Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var guy in Model)
+            {
+                <tr>
+                    <td>@rowNumber</td>
+                    <td>@guy.ShopName</td>
+                    <td>@guy.ShopLevel</td>
+                    <td>@guy.ShopType</td>
+                </tr>
+                rowNumber++;
+            }
+        </tbody>
+    </table>
+</form>
+@*Missin button for player profile*@
+@*Missin button for soler system page*@
+@*Missin button for player activity history*@
