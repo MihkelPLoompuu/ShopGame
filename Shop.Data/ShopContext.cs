@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shop.Core.Domain;
+using Store.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace Store.Data
     {
         public ShopContext(DbContextOptions<ShopContext> options) : base(options) { }
         public DbSet<Shop> Shops { get; set; }
+
+        public DbSet<FileTodatabase> FilesToDatabase { get; set; }
     }
 }

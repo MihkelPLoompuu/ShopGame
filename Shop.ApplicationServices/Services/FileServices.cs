@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Shop.Core.Domain;
 using Shop.Core.Dto;
+using Store.Core.Domain;
+using Store.Core.Serviceinterface;
 using Store.Data;
 using System;
 using System.Collections.Generic;
@@ -32,14 +34,14 @@ namespace Store.ApplicationServices.Services
                 {
                     using(var target = new MemoryStream())
                     {
-                        FileToDatabase files = new FileToDatabase()
+                        FileTodatabase files = new FileTodatabase()
                         {
-                            ID = Guid.NewGuid(),
+                            Id = Guid.NewGuid(),
                             ImageTitle = image.FileName,
-                            ShopID = domain.Id,
+                            ShopId = domain.Id,
                         };
                         image.CopyTo( target );
-                        files.ImageDate = target.ToArray();
+                        files.ImageData = target.ToArray();
                         _context.FilesToDatabase.Add(files);
                     }
                 }
