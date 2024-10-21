@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shop.ApplicationServices\Shop.ApplicationServices.csproj" />
-    <ProjectReference Include="..\Shop.Data\Shop.Data.csproj" />
+    <ProjectReference Include="..\Shop.ApplicationServices\Store.ApplicationServices.csproj" />
+    <ProjectReference Include="..\Shop.Data\Store.Data.csproj" />
   </ItemGroup>
 
 </Project>

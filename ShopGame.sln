@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopGame", "ShopGame\ShopGame.csproj", "{EA1415E0-DB22-4FB8-A0E1-C7A3776F45DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopGame", "ShopGame\ShopGame.csproj", "{EA1415E0-DB22-4FB8-A0E1-C7A3776F45DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.ApplicationServices", "Shop.ApplicationServices\Shop.ApplicationServices.csproj", "{57B990DA-B1AC-4390-8A2A-A26204832C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.ApplicationServices", "Shop.ApplicationServices\Store.ApplicationServices.csproj", "{57B990DA-B1AC-4390-8A2A-A26204832C16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Core", "Shop.Core\Shop.Core.csproj", "{64FDCC2D-6914-4837-ABEB-0B9C24989E97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Core", "Shop.Core\Store.Core.csproj", "{64FDCC2D-6914-4837-ABEB-0B9C24989E97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Data", "Shop.Data\Shop.Data.csproj", "{FECD06D8-08D0-4110-AFC4-622A47B19C7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Data", "Shop.Data\Store.Data.csproj", "{FECD06D8-08D0-4110-AFC4-622A47B19C7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

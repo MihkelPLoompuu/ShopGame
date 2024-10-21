@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Shop.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IShopsServices, ShopServices>();
+
+builder.Services.AddDbContext<Shop>(
+    option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefualtConnection")));
 
 var app = builder.Build();
 
