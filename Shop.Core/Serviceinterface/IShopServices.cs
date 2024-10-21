@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shop.Core.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,6 @@ namespace Shop.Core.Serviceinterface
 {
     public interface IShopServices
     {
-        Task<Shop> DetailsAsync(Guid id);
+        void UploadFilesToDatavbse(ShopDto dto, Shop domain);
     }
 }

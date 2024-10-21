@@ -10,7 +10,6 @@ namespace Store.Core.Serviceinterface
 {
     public interface IFileServices
     {
-        void UploadFilesToDatabase(ShopDto dto, Shop domain);
-        void UploadFilesToDatavbse(ShopDto dto, Shop domain);
+        void UploadFilesToDatabase(ShopDto dto, Shop domain);      
     }
 }
